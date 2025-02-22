@@ -1,9 +1,9 @@
 import { useState } from "react";
-import MyLogo from "../../assets/lg.png";
+import { IoMdClose, IoMdMenu } from "react-icons/io";
 import { Link } from "react-router"; // ✅ Corrected import
-import Download from "../Download/Download";
+import MyLogo from "../../assets/lg.png";
 import Resume from "../../assets/Resumee.pdf";
-import { IoMdMenu, IoMdClose } from "react-icons/io";
+import Download from "../Download/Download";
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -11,6 +11,13 @@ const Navbar = () => {
   const handleMenu = () => {
     setShowMenu((prev) => !prev); // ✅ Toggle properly
   };
+
+  const menuItems = [
+    { name: "Home", path: "/" },
+    { name: "About", path: "/about" },
+    { name: "Project", path: "/project" },
+    { name: "Contact", path: "/contact" },
+  ];
 
   return (
     <div className="bg-white flex items-center justify-between px-6 py-2 drop-shadow-md">
@@ -26,25 +33,17 @@ const Navbar = () => {
         )}
       </div>
 
-    
       <div
         className={`${
           showMenu ? "block" : "hidden"
         } absolute top-16 left-0 w-full bg-white flex-col items-center py-4 shadow-md md:static md:flex md:flex-row md:w-auto md:shadow-none`}
       >
         <ul className="flex flex-col items-center space-y-4 md:flex-row md:space-x-6 md:space-y-0">
-          <li className="link">
-            <Link to="/">Home</Link>
-          </li>
-          <li className="link">
-            <Link to="/about">About</Link>
-          </li>
-          <li className="link">
-            <Link to="/project">Project</Link>
-          </li>
-          <li className="link">
-            <Link to="/contact">Contact</Link>
-          </li>
+          {menuItems.map((items) => (
+            <li key={items.path} className="link">
+              <Link to={items.path}>{items.name}</Link>
+            </li>
+          ))}
         </ul>
       </div>
 

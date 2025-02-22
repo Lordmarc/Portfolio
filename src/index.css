@@ -2,15 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-.header-bg {
-  @apply bg-[#D8E9A8] rounded-b-xl;
-}
 
-
-
-.swiper-pagination-bullet {
-  @apply bg-[#D8E9A8]
-}
 
 @layer components{
 
@@ -20,5 +12,9 @@
 
   .link {
     @apply mx-2 hover:w-full text-center hover:bg-slate-300 md:hover:bg-slate-300 hover:text-white px-6 py-2 md:rounded-md font-medium;
+  }
+
+  .icons{
+    @apply h-full w-full cursor-pointer drop-shadow-xl  text-black  hover:text-blue-500 ;
   }
 }
