@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { FaArrowDown } from "react-icons/fa";
 
 const Download = ({ fileUrl, fileName }: {fileUrl:string, fileName: string}) => {

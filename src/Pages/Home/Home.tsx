@@ -17,7 +17,7 @@ const Home = () => {
     <div className="">
       <Navbar />
 
-      <div className="container mx-auto  lg:max-w-7xl lg:mx-4">
+      <div className="container mx-auto  lg:max-w-7xl lg:px-20">
         <div className="flex flex-col-reverse md:flex-row justify-between md:gap-4  mt-20 md:mt-40">
           <div className="flex-1 text-center md:text-left md:flex md:flex-col md:justify-end">
             <h2 className="font-medium text-xl md:text-2xl">Hello, I'am LORDMARC</h2>

@@ -1,4 +1,4 @@
-import React from 'react'
+
 import MyPicture from '../../assets/happy-me.png';
 
 const ImageCard = () => {
