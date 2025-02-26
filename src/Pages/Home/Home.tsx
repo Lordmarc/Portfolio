@@ -1,5 +1,4 @@
 import { FaFacebookSquare, FaGithubSquare, FaLinkedin } from "react-icons/fa";
-import ImageCard from "../../Components/Cards/ImageCard";
 import Download from "../../Components/Download/Download";
 import Resume from "../../assets/Resumee.pdf";
 
