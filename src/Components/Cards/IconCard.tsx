@@ -1,3 +1,4 @@
+import { ReactElement } from "react"
 
 
 const IconCard = ( {icon}: {icon: ReactElement} ) => {
