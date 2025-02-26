@@ -14,7 +14,7 @@ const Download = ({ fileUrl, fileName }: {fileUrl:string, fileName: string}) => 
 
 
   return (
-    <div className='flex btn-primary md:flex md:items-center md:gap-2 md:btn-primary'onClick={handleDownload}>
+    <div className='flex btn-primary gap-2 md:flex md:items-center md:gap-2 md:btn-primary'onClick={handleDownload}>
     <p>Resume/CV </p>
     <FaArrowDown className='h-4 w-4 animate-bounce'/>
     </div>

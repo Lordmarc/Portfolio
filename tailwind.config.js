@@ -18,6 +18,9 @@ export default {
                 transform: "translateX(0)" }
         },  
       },
+      minHeight: {
+        'content': 'calc(100vh - 4rem)', // Define a reusable class
+      },
       
     },
   },

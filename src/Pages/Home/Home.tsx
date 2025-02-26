@@ -1,7 +1,6 @@
 import { FaFacebookSquare, FaGithubSquare, FaLinkedin } from "react-icons/fa";
 import ImageCard from "../../Components/Cards/ImageCard";
 import Download from "../../Components/Download/Download";
-import Navbar from "../../Components/Navbar/Navbar";
 import Resume from "../../assets/Resumee.pdf";
 
 const Home = () => {
@@ -14,18 +13,18 @@ const Home = () => {
                         applications.`;
 
   return (
-    <div>
-      <Navbar />
-      <div className="container mx-auto lg:max-w-7xl lg:px-20">
-        <div className="flex flex-col-reverse md:flex-row justify-between md:gap-4 mt-20 md:mt-40">
-          <div className="flex-1 text-center md:text-left md:flex md:flex-col md:justify-end">
-            <h2 className="font-medium text-xl md:text-2xl">
-              Hello, I am LORDMARC
+   
+      
+      <div className="container min-h-[calc(100vh-12rem)] flex justify-center items-center mx-auto lg:max-w-7xl lg:px-20">
+       
+          <div className="flex-col text-center  md:text-center md:flex md:justify-center md:items-center">
+            <h2 className="font-bold text-2xl md:text-4xl">
+              HEY, I'M LORDMARC MATABANG
             </h2>
-            <p className="text-sm md:text-base">
-              Aspiring Web Developer {introduction}
+            <p className="text-sm text-slate-500 md:text-xl md:mt-3">
+              Aspiring  {introduction}
             </p>
-            <div className="flex gap-2 justify-center mt-2 md:justify-start">
+            <div className="flex gap-2 justify-center mt-2 md:justify-center">
            
               <a
                 href="https://www.facebook.com/lordmarc.siega.matabang.2024"
@@ -67,13 +66,10 @@ const Home = () => {
             
           </div>
 
-          {/* Image Card */}
-          <div className="flex-1 flex justify-center">
-            <ImageCard />
-          </div>
+          
         </div>
-      </div>
-    </div>
+
+  
   );
 };
 

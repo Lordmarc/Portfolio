@@ -11,7 +11,11 @@
   }
 
   .link {
-    @apply mx-2 hover:w-full text-center hover:bg-slate-300 md:hover:bg-slate-300 hover:text-white px-6 py-2 md:rounded-md font-medium;
+    @apply  text-center px-6 py-2 md:rounded-md font-medium transition-all duration-500;
+  }
+
+  .group:hover .link {
+    @apply bg-slate-300 text-white w-full;
   }
 
   .icons{
